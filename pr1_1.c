@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <conio.h>
 
-int main() {
+void main() {
     float celsius, fahrenheit;
+    clrscr();
 
     printf("Enter temperature in Celsius: ");
     scanf("%f", &celsius);
@@ -9,6 +11,7 @@ int main() {
     fahrenheit = (celsius * 9 / 5) + 32;
 
     printf("%.2f degrees Celsius is equal to %.2f degrees Fahrenheit\n", celsius, fahrenheit);
+    getch();
 
     
 }
