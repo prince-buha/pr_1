@@ -1,17 +1,23 @@
-#include <stdio.h>
-#include <conio.h>
+/*
+Q.1 Write a Program to convert temperature from degrees Celsius to Fahrenheit.
+Use formula for °C to °F is: ° F = ( °C × 9/5 ) + 32
+For example,
+Input:
+The temperature in Celcius: 38
 
-void main() {
-    float celsius, fahrenheit;
-    clrscr();
+Output: 
+The temperature in Fahrenheit: 100.4
+*/
 
-    printf("Enter temperature in Celsius: ");
-    scanf("%f", &celsius);
+#include<stdio.h>
 
-    fahrenheit = (celsius * 9 / 5) + 32;
-
-    printf("%.2f degrees Celsius is equal to %.2f degrees Fahrenheit\n", celsius, fahrenheit);
-    getch();
-
-    
+main(){
+	float c,f;
+	printf("enter your tempercture:- ");
+	scanf("%f",&c);
+	
+	 f = ( c * 9/5 )+32;
+	 
+	 printf("the c is %f",f);
+	 
 }
